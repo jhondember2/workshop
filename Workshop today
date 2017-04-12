@@ -1,0 +1,61 @@
+<?
+/**
+ * 
+ */
+class myprimeraClase
+{
+
+
+  // Publicos y privados
+
+  private $mivariable;
+  
+  private  function __construct()
+  {
+    
+    
+  }
+
+
+  public function getMivariables(){
+    return $this->mivariable;
+  }
+
+  public function setMivariable($valor){
+    $this->mivariables =   $valor;
+  }
+  
+}
+
+
+/**
+ * 
+ */
+class otraclase
+{
+  include('workshop.php');
+
+  private $pandebono;
+   
+  public function __construct(argument)
+  {
+    $numero = 3;
+    $this->pandebono = new myprimeraClase();
+
+  }
+
+  public function mostrartNuevo(){
+    echo $this->pandebono->getMivariables();
+  }
+
+  
+
+  
+
+  
+  
+}
+
+
+
+?>
